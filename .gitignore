@@ -1,2 +1,3 @@
-node_modules/
+# Ignore ALL node_modules folders anywhere
+**/node_modules/
 *.env
