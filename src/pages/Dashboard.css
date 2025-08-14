@@ -1,0 +1,499 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 1.5rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 0.25rem 0;
+}
+
+.dashboard-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+  font-weight: 400;
+}
+
+.create-file-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.create-file-btn:hover {
+  background: #2563eb;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+.btn-text {
+  font-weight: 600;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure 4 columns for larger screens */
+@media (min-width: 1200px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-card {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Stat Card Colors */
+.stat-card-primary .stat-icon {
+  background: #3b82f6;
+  color: white;
+}
+
+.stat-card-primary .stat-number {
+  color: #1e40af;
+}
+
+.stat-card-info .stat-icon {
+  background: #06b6d4;
+  color: white;
+}
+
+.stat-card-info .stat-number {
+  color: #0e7490;
+}
+
+.stat-card-warning .stat-icon {
+  background: #f59e0b;
+  color: white;
+}
+
+.stat-card-warning .stat-number {
+  color: #d97706;
+}
+
+.stat-card-success .stat-icon {
+  background: #10b981;
+  color: white;
+}
+
+.stat-card-success .stat-number {
+  color: #059669;
+}
+
+.stat-card-secondary .stat-icon {
+  background: #6b7280;
+  color: white;
+}
+
+.stat-card-secondary .stat-number {
+  color: #374151;
+}
+
+/* Department Overview */
+.department-overview {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 0.25rem 0;
+}
+
+.section-subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.department-card {
+  background: #f8fafc;
+  color: #374151;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+}
+
+.department-card:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.department-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(245, 87, 108, 0.4);
+}
+
+.department-icon {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.department-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.department-count {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+
+.department-label {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* System Insights */
+.system-insights {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.insight-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.insight-icon {
+  font-size: 1.25rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2e8f0;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.insight-content {
+  flex: 1;
+}
+
+.insight-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 0.125rem;
+}
+
+.insight-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.125rem;
+}
+
+.insight-description {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* Recent Files Section */
+.recent-files-section {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.files-container {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.files-table {
+  overflow-x: auto;
+}
+
+.files-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.files-table th {
+  background: #f8fafc;
+  color: #374151;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.files-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.files-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.file-row {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.file-row:hover {
+  background: #f8fafc;
+}
+
+.file-row td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
+.file-id {
+  font-weight: 700;
+  color: #667eea;
+  font-family: 'Courier New', monospace;
+}
+
+.file-title {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.assigned-to {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.department {
+  color: #718096;
+  font-weight: 500;
+}
+
+.last-action {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-primary {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-warning {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-success {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-secondary {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.empty-text {
+  font-size: 1rem;
+  color: #718096;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 1.25rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .department-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .files-table {
+    font-size: 0.75rem;
+  }
+  
+  .files-table th,
+  .files-table td {
+    padding: 0.5rem 0.25rem;
+  }
+} 
