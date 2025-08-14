@@ -38,16 +38,6 @@ This Digital File Tracker now implements department-based access control where u
 - Admin badge for administrators
 - Department-specific placeholders and messages
 
-### Mock Data Available
-
-The system includes mock data for:
-- **HR**: 3 files (Leave Application, Salary Revision, Employee Onboarding)
-- **Finance**: 3 files (Budget Approval, Expense Reimbursement, Purchase Order)
-- **IT**: 3 files (Software License, Hardware Purchase, System Maintenance)
-- **Administration**: 2 files (Office Space, Facility Maintenance)
-- **Procurement**: 2 files (Vendor Contract, Supplier Evaluation)
-- **Legal**: 2 files (Contract Review, Compliance Documentation)
-
 ### File Movement Tracking
 
 Some files have movement history that can be viewed in the Track page:
