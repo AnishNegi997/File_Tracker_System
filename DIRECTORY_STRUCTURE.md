@@ -98,25 +98,6 @@ fileTracker/
 - Department-specific data only
 - Simplified navigation
 
-## 🧪 Testing the Structure
-
-### Test Admin User
-```
-Email: diana@company.com
-Password: any password
-Role: admin
-Access: All departments
-```
-
-### Test Employee Users
-```
-HR: alice@company.com
-Finance: bob@company.com  
-IT: charlie@company.com
-Role: user
-Access: Department-specific only
-```
-
 ## 🔧 Benefits of This Structure
 
 1. **Clear Separation**: Admin and employee functionality are clearly separated
